@@ -4,24 +4,11 @@ import math
 import pandas as pd
 import streamlit as st
 
-"""
-# Welcome to Streamlit!
-
-Edit `/streamlit_app.py` to customize this app to your heart's desire :heart:
-
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
-"""
 
 st.title('Counter Example')
 
-# Streamlit runs from top to bottom on every iteraction so
-# we check if `count` has already been initialized in st.session_state.
 
-# If no, then initialize count to 0
-# If count is already initialized, don't do anything
+# check if `count` has already been initialized in st.session_state.
 if 'count' not in st.session_state:
 	st.session_state.count = 0
 
@@ -38,7 +25,7 @@ if decrement:
 st.write('Count = ', st.session_state.count)
 
 
-
+# Altair showcase
 
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
